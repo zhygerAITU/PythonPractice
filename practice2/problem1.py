@@ -1,10 +1,15 @@
-#Practice 2 Problem 1
+#Practice 2, Problem 1 (Independent work)
 
 import math
 
-x = 10
-t = 1
+def solve(a, b, h):
 
-Z = (9 * math.pi * t + 10 * math.cos(x)) / (math.sqrt(t) - abs(math.sin(t))) * math.exp(x)
+    return (pow(a, 2) + b) * h / (2 * (a - b) + 4)
+    
 
-print("Answert is - ", Z)
+
+a = int(input("Input 'a' variable: "))
+b = int(input("Input 'b' variable: "))
+h = int(input("Input 'h' variable: "))
+
+print("The result is ", solve(a, b, h))
