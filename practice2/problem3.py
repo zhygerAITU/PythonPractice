@@ -14,3 +14,8 @@ def function1(x, y):
 print("1) Output where x = 2, y = 1 is", function1(2, 1)) 
 
 #Task2
+
+def function2(x, y, z):
+    return (abs((1 / math.tan(y)) + 6))**(1/3) + math.sqrt(((x + 1)**3) / (4*y - 2*z))
+
+print("2) Output where x = 1, y = 4, z = 3 is", function2(1, 4, 3)) 
